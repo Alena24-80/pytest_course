@@ -12,11 +12,10 @@ def test_check_filter_A_to_Z(driver, login):
     driver.find_element(By.CSS_SELECTOR, '.select_container').click()
     time.sleep(3)
     driver.find_element(By.CSS_SELECTOR, '.select_container option:nth-child(1)').click()
-    time.sleep(10)
     select = Select(driver.find_element(By.CSS_SELECTOR, '.product_sort_container'))
     time.sleep(1)
     select.select_by_value('az')
-    time.sleep(10)
+
 
 
 
